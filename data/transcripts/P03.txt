@@ -1,0 +1,10 @@
+Participant: P03 - Priya, Design Lead at an e-commerce company
+
+[interviewer] How does research get shared across your org?
+[priya] It mostly doesn't. Findings get stuck with whoever ran the study. A designer three desks away will make a decision that a study from last month directly answers, and they never even saw it.
+[interviewer] So it's a distribution problem?
+[priya] Completely. We're not short on insights, we're short on getting the right insight to the right person at the moment they're making a decision. The research exists, it just never travels.
+[interviewer] Have you tried anything to fix it?
+[priya] We started a monthly research newsletter. Nobody reads it. The problem is people don't want a digest, they want the answer to the specific question they have right now, and our stuff isn't searchable enough for that.
+[interviewer] What about tagging or organizing it?
+[priya] We tried tagging everything by theme, but keeping the tags consistent across a team is a nightmare. Everyone tags differently, so search is unreliable, and once search is unreliable people stop trusting it and go back to just asking around in Slack.

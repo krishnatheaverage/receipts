@@ -1,0 +1,10 @@
+Participant: P07 - Lena, Service Designer at a government agency
+
+[interviewer] How is research organized where you work?
+[lena] Formally? There's a shared drive. Practically? It's chaos. Files named "notes_final_v3_REAL." The tagging is completely inconsistent because every researcher invents their own scheme, so I can never rely on a tag to find what I need.
+[interviewer] So how do you actually find things?
+[lena] I ask a human. I message whoever's been here longest and hope they remember. That's the real search engine, some person's memory, which is a terrible single point of failure.
+[interviewer] What happens when that person leaves?
+[lena] We lost a researcher last year and a decade of context walked out the door with her. Studies she ran are technically still on the drive but nobody knows they exist or what's in them. It's like they were deleted.
+[interviewer] If you could wave a wand?
+[lena] Make everything searchable by what was actually said, not by whatever someone happened to tag it. And show me the quote so I know the search actually understood me and isn't just guessing.

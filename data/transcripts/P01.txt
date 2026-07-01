@@ -1,0 +1,10 @@
+Participant: P01 - Maya, Senior PM at a fintech startup
+
+[interviewer] Walk me through how your team handles past user research.
+[maya] Honestly? Badly. The biggest problem is that I can never find past research when I need it. Everything lives in someone's Google Drive or a Notion page nobody links to.
+[interviewer] Can you give me an example?
+[maya] Yeah, last quarter I ran a whole onboarding study, five interviews, and halfway through I realized a teammate had done almost the exact same thing eight months earlier. I basically redid work that already existed because there was no way to know it was there.
+[interviewer] How did that feel?
+[maya] Demoralizing. It's not that people don't do research, it's that the research disappears the moment the readout meeting ends. If I can't search it, it may as well not exist.
+[interviewer] What happens when leadership asks about a finding?
+[maya] That's the other thing. They'll ask "how do you know that" and I'm scrambling to find the clip or the quote. I usually just end up saying "trust me," which is not a great look.

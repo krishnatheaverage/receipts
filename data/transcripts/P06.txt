@@ -1,0 +1,10 @@
+Participant: P06 - Tom, Founder at an early-stage startup
+
+[interviewer] As a founder, how do you keep track of customer conversations?
+[tom] Right now it's all in my head and a messy doc. I do most of the sales and discovery calls myself, so I remember them, but that obviously doesn't scale and it's already breaking.
+[interviewer] Breaking how?
+[tom] I hired two people and now they're having calls I never hear, and I'm having calls they never hear, and there's no shared brain. We're a ten-person company and we already can't find our own customer research.
+[interviewer] What would good look like?
+[tom] One place where every call lives, and I can ask it a question and get back what customers actually said, with the quotes. I don't want a dashboard of charts, I want the voice of the customer, verbatim, searchable.
+[interviewer] How much do you worry about accuracy?
+[tom] A lot, actually. If I'm going to make a roadmap decision off this, I need to know the tool isn't paraphrasing customers into saying something they didn't. A made-up quote is worse than no quote. I'd need to trust that what it shows me is really what they said.

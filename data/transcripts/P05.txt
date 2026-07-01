@@ -1,0 +1,10 @@
+Participant: P05 - Aisha, Head of Research at a media company
+
+[interviewer] You manage a research team. What keeps you up at night?
+[aisha] Whether any of the work we do actually sticks. We produce good research and then it evaporates. Six months later a new hire asks a question we answered definitively last year and nobody remembers we answered it.
+[interviewer] So institutional memory?
+[aisha] Exactly. Research should compound. Every study should make the next one cheaper. Instead every team starts from zero because the old findings aren't findable or aren't trusted enough to build on.
+[interviewer] What makes a finding trusted enough to build on?
+[aisha] Traceability. If I can pull up the claim and immediately see the five quotes it rests on, I'll build on it. If it's just an assertion in an old slide deck, I'll want to re-verify it myself, which defeats the entire purpose.
+[interviewer] Do your stakeholders feel the same?
+[aisha] More than you'd think. My VP is data-driven to a fault. He will not accept a qualitative finding unless he can see the evidence underneath it. The quote is the currency. Without it, the insight has no weight in the room.

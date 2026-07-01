@@ -1,0 +1,10 @@
+Participant: P02 - Dev, UX Researcher at a healthcare company
+
+[interviewer] What's the hardest part of your job day to day?
+[dev] Getting people to actually believe the findings. Leadership just doesn't trust our insights unless I can show them exactly where it came from.
+[interviewer] Why do you think that is?
+[dev] Because for years research was a black box. Someone would present a slide that said "users are frustrated" and an exec would push back and there was no receipt behind it. So now there's this baseline skepticism.
+[interviewer] How do you deal with it now?
+[dev] I over-index on evidence. Every claim in my reports has a timestamped quote attached, and honestly that single change did more for my credibility than anything else. When they can click through to the actual person saying the actual words, the arguing stops.
+[interviewer] Does that take a lot of time?
+[dev] Tons. I'm manually copying quotes out of transcripts and pasting them under each insight. It's the most tedious part of the whole process, but I can't skip it, because a finding without a quote just gets ignored.

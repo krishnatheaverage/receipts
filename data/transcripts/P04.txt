@@ -1,0 +1,10 @@
+Participant: P04 - Sam, Product Manager at a B2B SaaS company
+
+[interviewer] Tell me about the last time you looked for an old insight.
+[sam] Two weeks ago. I needed to know what enterprise customers had said about permissions, and I knew we'd talked to them, but finding it took me an entire afternoon of digging through Drive folders.
+[interviewer] An afternoon?
+[sam] An afternoon. And I only found half of it. I'm fairly sure there were other conversations I never located. So I made a decision on partial information and just hoped it was representative.
+[interviewer] What would have made that easier?
+[sam] If I could have searched across every interview we've ever done in plain English and gotten the actual quotes back. That's the dream. Not a summary someone wrote, the real words.
+[interviewer] Why the real words specifically?
+[sam] Because summaries lie, not on purpose, but they drift. Someone writes "customers want SSO" and three months later that's gospel, but if you go back to the transcript they actually said something way more nuanced. I want to see the source, not somebody's memory of the source.

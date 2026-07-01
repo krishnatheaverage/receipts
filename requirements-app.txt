@@ -1,0 +1,4 @@
+# Optional: only needed for the Streamlit UI (app.py). The CLI (run.py) needs
+# nothing beyond requirements.txt.
+-r requirements.txt
+streamlit>=1.30

@@ -1,0 +1,10 @@
+Participant: P08 - Marcus, Product Analyst at a logistics company
+
+[interviewer] Where does research live for your team?
+[marcus] Scattered. Some in a repository tool we bought, most not, because keeping the tool up to date is manual and everyone's too busy. So the tool has a fraction of what we actually know and people don't trust it to be complete.
+[interviewer] Does that incompleteness matter?
+[marcus] Hugely. A search tool is only useful if you believe it has everything. The moment I find one gap, I stop trusting it entirely and go back to asking people, and then the tool just decays further because nobody feeds it.
+[interviewer] You mentioned trust a couple times.
+[marcus] It's the whole game. Trust that it's complete, and trust that what it returns is real. If it summarized a call and I later found out it twisted what the customer said, I'd never open it again. I need to be able to click a claim and land on the exact moment someone said it.
+[interviewer] So evidence you can verify?
+[marcus] Yes. Give me the receipt. If every insight came with the actual quote attached to the actual person, I'd finally trust the thing.
