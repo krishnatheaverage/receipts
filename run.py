@@ -1,9 +1,3 @@
-"""Receipts CLI: transcripts -> themes -> verified quotes -> report.html
-
-    python run.py                      # uses ./data/transcripts, writes report.html
-    python run.py --data path/ --out out.html --model claude-haiku-4-5
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -30,7 +24,7 @@ def main() -> int:
 
     try:
         synthesis = synthesize(transcripts, model=args.model)
-    except Exception as e:  # noqa: BLE001 - surface any API/auth error plainly
+    except Exception as e:
         print(f"\nSynthesis failed: {e}", file=sys.stderr)
         print("Is ANTHROPIC_API_KEY set? (see .env.example)", file=sys.stderr)
         return 1

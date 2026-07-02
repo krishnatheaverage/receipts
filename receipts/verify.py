@@ -1,18 +1,3 @@
-"""The part that matters: check every quote the model claimed against the actual
-source transcripts. This is deterministic string matching, NOT another LLM call
--- you don't verify a model with the same model.
-
-Each quote lands in one of five buckets:
-
-  verified      quote appears (near-)verbatim in the cited transcript
-  loose         quote is close but paraphrased / not verbatim
-  misattributed quote isn't in the cited transcript, but IS in another one
-  unverified    quote isn't in any transcript (fabricated)
-  bad_source    the cited transcript_id doesn't exist
-
-The "grounded score" is the headline number: what fraction of the insights are
-actually backed by real, correctly-attributed evidence."""
-
 from __future__ import annotations
 
 import difflib
@@ -28,14 +13,11 @@ MISATTRIBUTED = "misattributed"
 UNVERIFIED = "unverified"
 BAD_SOURCE = "bad_source"
 
-# A quote scoring >= VERBATIM_THRESHOLD against a transcript is treated as a real
-# quote from it; between LOOSE and VERBATIM it's a paraphrase.
 VERBATIM_THRESHOLD = 0.97
 LOOSE_THRESHOLD = 0.80
 
 
 def _normalize(s: str) -> list[str]:
-    """Lowercase, straighten smart quotes/dashes, drop punctuation, tokenize."""
     s = s.lower()
     replacements = {
         "’": "'", "‘": "'", "“": '"', "”": '"',
@@ -48,8 +30,6 @@ def _normalize(s: str) -> list[str]:
 
 
 def match_score(quote: str, source: str) -> float:
-    """Fraction of the quote's words that appear, in order, in the source.
-    1.0 == every word of the quote is present as an in-order run (verbatim)."""
     q = _normalize(quote)
     s = _normalize(source)
     if not q:
@@ -66,7 +46,7 @@ class VerifiedEvidence:
     cited_id: str
     status: str
     score: float
-    found_in: str | None = None  # populated for misattributed quotes
+    found_in: str | None = None
 
 
 @dataclass
@@ -77,7 +57,7 @@ class VerifiedTheme:
 
     @property
     def grounded_score(self) -> float:
-        return _grounded([e for e in self.evidence])
+        return _grounded(list(self.evidence))
 
 
 @dataclass
@@ -94,7 +74,6 @@ class VerificationReport:
 def _grounded(evidence: list[VerifiedEvidence]) -> float:
     if not evidence:
         return 0.0
-    # verified counts fully; a paraphrase counts half; everything else is zero.
     score = sum(1.0 if e.status == VERIFIED else 0.5 if e.status == LOOSE else 0.0
                 for e in evidence)
     return score / len(evidence)

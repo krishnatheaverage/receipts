@@ -1,7 +1,3 @@
-"""Render a VerificationReport as a self-contained HTML dashboard. This is what
-you screenshot for the Loom: themes, quotes, source badges, and a red flag on
-anything the verifier couldn't back up."""
-
 from __future__ import annotations
 
 import html

@@ -1,14 +1,3 @@
-"""Load interview transcripts from a directory of .txt files.
-
-Each file looks like:
-
-    Participant: P01 - Maya, Senior PM at a fintech startup
-
-    [interviewer] ...
-    [maya] ...
-
-The filename stem (e.g. P01) is the transcript id used in citations."""
-
 from dataclasses import dataclass
 from pathlib import Path
 

@@ -1,10 +1,3 @@
-"""The LLM half of the pipeline: transcripts in, a Synthesis (themes + claimed
-quotes) out. This step is *not* trusted for faithfulness -- verify.py is.
-
-Uses the Messages API structured-outputs path (messages.parse with a Pydantic
-schema) so the model is forced to return the exact shape we need, with the
-transcript_id attached to every quote."""
-
 from __future__ import annotations
 
 import anthropic
@@ -12,8 +5,6 @@ import anthropic
 from .data import Transcript
 from .models import Synthesis
 
-# Default to the most capable model; the synthesis quality is what a reviewer
-# sees first. Swap to "claude-haiku-4-5" for cheaper/faster runs.
 MODEL = "claude-opus-4-8"
 
 SYSTEM = """You are a user-research analyst. You are given a set of user-interview \

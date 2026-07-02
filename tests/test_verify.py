@@ -1,11 +1,3 @@
-"""Proves the verification layer works, with no API call needed.
-
-Run:  python tests/test_verify.py   (or: pytest)
-
-Feeds the verifier a hand-built Synthesis containing one honest quote, one
-fabricated quote, and one quote copied from the WRONG transcript, and asserts it
-labels each correctly. This is the guarantee behind the grounded score."""
-
 import os
 import sys
 
@@ -44,13 +36,10 @@ def test_verify_labels_each_quote():
             title="Rediscovery",
             summary="Past research is hard to find.",
             evidence=[
-                # honest, verbatim, correct source
                 Evidence(transcript_id="P01", speaker="Maya",
                          quote="I can never find past research"),
-                # fabricated: appears in no transcript
                 Evidence(transcript_id="P01", speaker="Maya",
                          quote="we should just delete the whole repository"),
-                # real quote, but attributed to the wrong transcript
                 Evidence(transcript_id="P01", speaker="Maya",
                          quote="Leadership just doesn't trust our insights"),
             ],
@@ -65,7 +54,6 @@ def test_verify_labels_each_quote():
     assert statuses[2] == MISATTRIBUTED, statuses
     assert report.themes[0].evidence[2].found_in == "P02"
 
-    # 1 verified out of 3 -> ~33% grounded
     assert 0.30 <= report.grounded_score <= 0.40, report.grounded_score
 
 

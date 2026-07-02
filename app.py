@@ -1,17 +1,8 @@
-"""Optional Streamlit UI for Receipts.
-
-    pip install -r requirements-app.txt
-    streamlit run app.py
-
-Paste transcripts (or use the bundled samples), and see themes with a verified
-quote under each insight and a live grounded score.
-"""
-
 from __future__ import annotations
 
 import streamlit as st
 
-from receipts.data import Transcript, load_transcripts
+from receipts.data import load_transcripts
 from receipts.pipeline import MODEL, synthesize
 from receipts.verify import (
     BAD_SOURCE, LOOSE, MISATTRIBUTED, UNVERIFIED, VERIFIED, verify_synthesis,
